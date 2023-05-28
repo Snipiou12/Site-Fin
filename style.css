@@ -6,32 +6,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Lato";
+    font-family: "Lato",sans-serif;
 }
- body{
+
+body{
     margin: 0;
     padding: 0;
-    /* font-family:"Lato", sans-serif; */
     color:white;
-    
-    background: url("images/img1.3.jpg") black;
+    background: url("images/img1.3.jpg") #1c1c24 no-repeat;
     height: 100vh;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50%;
 } 
-
 #Header{
-    
     display: flex;
     justify-content:center;
 }
-
 nav{
 display: flex;
 flex-direction: column;
 justify-content:center;
-
 }
 nav ul {
     list-style: none;
@@ -41,58 +35,35 @@ nav ul li {
     margin-bottom: 15px;
     text-align: center;
 }
-
-
-
 nav ul li a {
     text-decoration: none;
     font-weight: 900;
     padding: 5px 5px;
-    color: white;
-    
-    
-    
+    color: white; 
 }
-nav ul li a:hover{
-   
+nav ul li a:hover{   
     color: black;
-
 }
 nav ul li a:active{
     color: gray;
-
 }
 p{
     font-size: 1.1rem;
 }
 section{
     display: flex;
-    
     flex-direction:column;
-   
     align-items: center;
-    overflow-y: auto;
-    
 
-    
 }
-
 section article  {
     display: flex;
     flex-direction: column;
     width: 75%;
     margin-top: 20px;
-    
-
-    
 }
 section article p{
     margin-bottom: 10px;
-}
-main{
-    display: flex;
-    flex-direction: column ;
-    
 }
 main H1{
     /* text-align: center; */
@@ -109,28 +80,20 @@ img{
     margin: auto;
     border-radius:20%  ;
 }
-iframe{
-    display: none;
-    
-}
 aside{
     display: none;
-    flex-direction: column;
-    align-items: center;
 }
 hr{
     display:none;
 }
-
 footer{
-    position: absolute;
+    position:relative;
     display: flex;
     justify-content:space-evenly;
     text-align: center;
     bottom: 0;
     border-top:3px solid white ;
     width: 100%;
-
 }
 footer a{
     color: skyblue;
@@ -143,53 +106,35 @@ footer a:active{
 }
 /* ------------ */
 @media  screen and (min-width: 1024px){
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: "Lato";
-    }
+   
     #Header{
-        display: flex;
         flex-direction: row;
-        justify-content:center;
-    }
-    img{
-        width: 100px;
-        height: 100px;
     }
     nav ul{
     display: flex;
     flex-direction: row;
     }
-
     nav ul li{
         margin-right: 50px;
     }
     nav ul li a{
         font-size: 1.7rem;
     }
-    
     section{
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
     section article{
         width: 40%;
-        display: flex;
-        flex-direction: column;
     }
     main article p{
         margin-left: 20px;
         margin-right: 20px;
-
     }
     img{
         padding-top: 10px;
         width: 300px;
         height: 200px;
-        
-        
     }
     aside{
         margin-top: 20px;
@@ -209,31 +154,18 @@ footer a:active{
     aside a:active{
         color: gray;
     }
-    
     aside p{
         font-size: 1.7rem;
     }
     iframe{
-        display: flex;
-        width: 25%;
-        
-        
+        width: 25%;        
     }
     footer{
-        position: absolute;
-        display: block;
-        
-        bottom: 0;
-        border-top:3px solid white ;
-        width: 100%;
-    
+        position:absolute
     }
     footer p + p {
         display: none;
-    }
-    
-
-
+    } 
 }
 
 
